@@ -1,4 +1,4 @@
-package io.github.kotlin.fibonacci
+package org.rhuertas.kotlin.fibonacci
 
 fun generateFibi() = sequence {
     var a = firstElement
@@ -12,6 +12,8 @@ fun generateFibi() = sequence {
         b = c
     }
 }
+
+fun rhuertaGreet() = "Hello from RHuertas!"
 
 expect val firstElement: Int
 expect val secondElement: Int
