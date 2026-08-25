@@ -51,8 +51,8 @@ mavenPublishing {
     pom {
         name = "My library"
         description = "A library."
-        inceptionYear = "2024"
-        url = "https://github.com/kotlin/multiplatform-library-template/"
+        inceptionYear = "2026"
+        url = "https://github.com/RaulHuertas/multiplatform_kmplib_test1/"
         licenses {
             license {
                 name = "XXX"
