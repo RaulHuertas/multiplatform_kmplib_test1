@@ -14,6 +14,25 @@ Note that no other actions or tools usually required for the library development
 
 Please find the detailed guide [here](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-publish-libraries.html).
 
+## Publishing this library to Maven Central
+
+1. Put credentials in your **user-level** Gradle properties file (`~/.gradle/gradle.properties`), not in this repository:
+   - `mavenCentralUsername=<your-central-portal-username>`
+   - `mavenCentralPassword=<your-central-portal-token>`
+   - `signing.keyId=<your-pgp-key-id>`
+   - `signing.key=<ascii-armored-private-key-content>`
+   - The signing key passphrase property required by Gradle signing
+2. Set the release version in `library/build.gradle.kts`.
+3. Run:
+   - `./gradlew :library:publishAndReleaseToMavenCentral`
+4. Verify published coordinates:
+   - `io.github.raulhuertas:library:<version>`
+
+## Check for gradle commands with a prefix
+(e.g checkPomFileFile...)
+```bash
+ .\gradlew tasks --all | Select-String checkPomFileFor
+```
 # Other resources
 * [Publishing via the Central Portal](https://central.sonatype.org/publish-ea/publish-ea-guide/)
 * [Gradle Maven Publish Plugin \- Publishing to Maven Central](https://vanniktech.github.io/gradle-maven-publish-plugin/central/)
