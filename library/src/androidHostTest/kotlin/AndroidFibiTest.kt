@@ -1,5 +1,6 @@
 package io.github.kotlin.fibonacci
 
+import org.rhuertas.kotlin.fibonacci.generateFibi
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
