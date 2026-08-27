@@ -27,9 +27,6 @@ jobs:
           distribution: 'zulu'
           java-version: 21
 
-      # Run the publishing Gradle task for the library module
-      - name: Publish to npm
-        run: ./gradlew :shared:publishJsPackageToNpmjsRegistry
       - name: Publish to MavenCentral
         run: ./gradlew publishToMavenCentral --no-configuration-cache
         env:
