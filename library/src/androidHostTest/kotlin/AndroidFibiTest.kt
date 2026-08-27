@@ -1,6 +1,6 @@
-package io.github.kotlin.fibonacci
+package io.github.raulhuertas.kotlin.fibonacci
 
-import org.rhuertas.kotlin.fibonacci.generateFibi
+import io.github.raulhuertas.kotlin.fibonacci.generateFibi
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

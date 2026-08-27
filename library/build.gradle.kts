@@ -6,13 +6,13 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "org.raulhuertas"
+group = "io.github.raulhuertas"
 version = "1.0.0"
 
 kotlin {
     jvm()
     androidLibrary {
-        namespace = "org.rhuertas.kotlin.fibonacci"
+        namespace = "io.github.raulhuertas.kotlin.fibonacci"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 

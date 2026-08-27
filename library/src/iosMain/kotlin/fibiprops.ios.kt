@@ -1,4 +1,4 @@
-package org.rhuertas.kotlin.fibonacci
+package io.github.raulhuertas.kotlin.fibonacci
 
 actual val firstElement: Int = 3
 actual val secondElement: Int = 4
